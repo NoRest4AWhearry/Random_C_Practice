@@ -13,7 +13,7 @@
 *
 ************************************************************/
 #include <stdio.h>
-void sort(int row, int column, int a[][column]);
+void sort(int nRows, int nCols, int a[nRows][nCols]);
 
 int main(void)
 {
@@ -30,21 +30,21 @@ int main(void)
     return 0;
 }
 
-void sort(int row, int column, int a[][column])
+void sort(int nRows, int nCols, int a[nRows][nCols])
 {
     int i,j,k,l, temp;
     
     
     // Sort Array
     // Interate over each row             
-    for (i = 0; i < row ; i++)
+    for (i = 0; i < nRows ; i++)
     {
         printf("|");
         // K is the digit in its number column.
-        for (k = 0; k < column - 1; k++)
+        for (k = 0; k < nCols - 1; k++)
         {
             //swap number if number in m[i][k] > m[i][k+1].
-            for (l = k + 1; l < column; l++)
+            for (l = k + 1; l < nCols; l++)
             {
                 if (a[i][k] > a[i][l])
                 {
@@ -55,7 +55,7 @@ void sort(int row, int column, int a[][column])
             }
         }
         //interate over each column
-        for (j = 0; j < column; j++)
+        for (j = 0; j < nCols; j++)
         {
             printf("%3i|", a[i][j]);
         }
