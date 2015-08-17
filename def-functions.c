@@ -35,12 +35,12 @@ void FtoC(float f)
 {
     float c = (f-32.0)*5.0/9.0;
     printf("%6.2f degrees Fahrenheit is %6.2f degrees Celsius.\n", f, c);
-    // if want to return value change function type from "void" to "float" and and "return 0" on this line
+    // if want to return value change function type from "void" to "float" and add "return 0" on this line
 }
 
 void CtoF(float c)
 {
     float f = c * 5.0/9.0 + 32.0;
     printf("%6.2f degrees Celsius is %6.2f degrees Fahrenheit.\n", c, f);
-    // if want to return value change function type from "void" to "float" and and "return 0" on this line
+    // if want to return value change function type from "void" to "float" and add "return 0" on this line
 }
