@@ -7,7 +7,7 @@
 ** Multidimensional Arrays: 
 *
 ** Create a 5x5 matrix and print each number on its
-** specified row and column with correct left align.
+** specified row and column with correct right align.
 ************************************************************/
 
 #include <stdio.h>
